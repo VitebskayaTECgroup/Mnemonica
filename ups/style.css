@@ -1,0 +1,58 @@
+body {
+	background: #000000;
+	color: #fff;
+}
+
+* {
+	font-family: GostARegular;
+	box-sizing: border-box;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	font-size: 22px;
+	background: #444;
+	border: 1px solid #555;
+}
+
+td {
+	border: 1px solid #555;
+	padding: 5px;
+}
+
+.caption {
+	font-size: 20px;
+}
+
+.status {
+	font-size: 20px;
+}
+
+.green,.yellow,.red {
+	background-color: #333;
+}
+
+.green div,
+.yellow div,
+.red div {
+	color: #000;
+	font-size: 20px;
+	font-weight: bolder;
+	vertical-align: middle;
+	height: 20px;
+	text-shadow: 0 0 5px #fff;
+}
+
+.green div {
+	background-image: url("./images/green.gif")
+}
+.yellow div {
+	background-image: url("./images/yellow.gif")
+}
+.red div {
+	background-image: url("./images/red.gif");
+}

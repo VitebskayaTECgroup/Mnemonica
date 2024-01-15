@@ -1,0 +1,99 @@
+body {
+	background: #151515;
+	color: #fff;
+}
+
+.container {
+	width: 1250px;
+}
+
+.header {
+	background: #111;
+	color: #fff;
+	display: table;
+	width: 1220px;
+	font-family: GostARegular;
+}
+
+.header * {
+	display: table-cell;
+}
+
+.header a {
+	width: 50px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font: bold 20pt GostARegular;
+}
+
+.header span {
+	font-size: 22pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+.cell {
+	display: inline-block;
+	width: 300px;
+	background: #2a292f;
+	font-family: GostARegular;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.cell p {
+	font-size: 13pt;
+	padding: 2px;
+	color: #ddd;
+	background: #444;
+	text-align: center;
+	margin: 0;
+	height: 2.4em;
+	display: table;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.cell p span {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.cell div {
+	display: table;
+	border-collapse: collapse;
+	width: 100%;
+	background: #2a292f;
+	font-weight: bold;
+	height: 3.6em;
+}
+
+.cell div span {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 35pt;
+	color: #05ac59;
+	text-align: center;
+}
+
+.cell div span:first-child {
+	width: 80px;
+	font-size: 22pt;
+	color: #aaa;
+	text-align: left;
+	padding-left: 8px;
+}
+
+.cell div span:last-child {
+	width: 60px;
+	font-size: 18pt;
+	color: #999;
+	text-align: right;
+	padding-right: 8px;
+}
+
+.cell.disabled p,
+.cell.disabled div {
+	visibility: hidden;
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+	
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>PAR</title>
+	<link rel="stylesheet" href="oper_ktc.css" />
+	<link rel="stylesheet" href="../_/lib/jquery-ui.min.css" />
+	<link rel="shortcut icon" href="resources/favicon.png" type="image/png" />
+</head>
+
+<body>
+	<!-- Вставка svg с возможностью интерактива style="width: 100%;" -->
+	<!-- <object style="position: absolute;" type="image/png+xml" data="oper_ktc.png"></object> -->
+	<img src="oper_ktc.svg"  />
+	<!-- Хак для отключения перехвата контекстных меню объектом svg -->
+	<div style="position:fixed;top:0;left:0;bottom:0;right:0;"></div>
+
+	<div
+		scheme="oper_ktc"
+		lib="oper_ktc"
+		type="mnemonica"
+		users="ktc_duty,esmal,crow,void,tai_eng,tai_duty,pto-gen"
+		admins="esmal,crow,tai_eng,void"
+		highlight-timeout="3",
+		log="true"
+	></div>
+	<div
+		scheme="tags"
+		type="insql"
+		users="ktc_duty,esmal,crow,void,tai_eng"
+		admins="esmal,crow,tai_eng,void"
+	></div>
+
+	<script src="../_/lib/jquery-1.12.4.min.js"></script>
+	<script src="../_/lib/jquery-ui.min.js"></script>
+	<script src="../_/js/mnemonica-0.8.js?0"></script>
+</body>
+
+</html>

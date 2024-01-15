@@ -1,0 +1,35 @@
+body {
+	background-color: black;
+}
+
+.div_one {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: left;
+	width: 955px;
+	font-size: 18pt;
+	background: #A6A6A6;
+	border: 3px inset #c0c2ce;
+}
+
+.div_black {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: center;
+	width: 60px;
+	font-size: 18pt;
+	background: #fee3c3;
+	color: black;
+	border: 3px inset #c0c2ce;
+}
+
+.div_time {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: left;
+	width: 293px;
+	font-size: 20pt;
+	background: #fee3c3;
+	color: black;
+	border: 3px inset #c0c2ce;
+}

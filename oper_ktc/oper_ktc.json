@@ -1,0 +1,65 @@
+{
+	"images": {
+		"zadver": {
+			"green": {
+				"text": "Закрыта",
+				"image": "elements/zadver_green.svg"
+			},
+			"yellow": {
+				"text": "В ремонте",
+				"image": "elements/zadver_yellow.svg"
+			},
+			"red": {
+				"text": "Открыта",
+				"image": "elements/zadver_red.svg"
+			}
+						
+		},
+		"baigor": {
+			"green": {
+				"text": "Закрыта",
+				"image": "elements/baigor_green.svg"
+			},
+			"yellow": {
+				"text": "В ремонте",
+				"image": "elements/baigor_yellow.svg"
+			},
+			"red": {
+				"text": "Открыта",
+				"image": "elements/baigor_red.svg"
+			}
+						
+		},
+
+		"zadgor": {
+			"green": {
+				"text": "Закрыта",
+				"image": "elements/zadgor_green.svg"
+			},
+			"yellow": {
+				"text": "В ремонте",
+				"image": "elements/zadgor_yellow.svg"
+			},
+			"red": {
+				"text": "Открыта",
+				"image": "elements/zadgor_red.svg"
+			}
+						
+		},
+		"baiver": {
+			"green": {
+				"text": "Закрыта",
+				"image": "elements/baiver_green.svg"
+			},
+			"yellow": {
+				"text": "В ремонте",
+				"image": "elements/baiver_yellow.svg"
+			},
+			"red": {
+				"text": "Открыта",
+				"image": "elements/baiver_red.svg"
+			}
+						
+		}
+	}
+}

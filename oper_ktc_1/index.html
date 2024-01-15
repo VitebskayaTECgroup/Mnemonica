@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+	
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>VODA</title>
+	<link rel="stylesheet" href="oper_ktc.css" />
+	<link rel="stylesheet" href="../_/lib/jquery-ui.min.css" />
+	<link rel="shortcut icon" href="resources/favicon.png" type="image/png" />
+
+	<script>
+		// Массив с URL-адресами GIF-файлов
+		var gifUrls = [
+			"5WWU.gif",
+			 ];
+  
+		// Функция для получения случайного URL-адреса GIF
+		function getRandomGifUrl() {
+			var randomIndex = Math.floor(Math.random() * gifUrls.length);
+			return gifUrls[randomIndex];
+		}
+  
+		// Загрузка случайного GIF при загрузке страницы
+		window.onload = function() {
+			var randomGifUrl = getRandomGifUrl();
+			var imgElement = document.getElementById("randomGif");
+			imgElement.src = randomGifUrl;
+		};
+	</script>
+
+</head>
+
+<style>
+	.gif-container {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+	}
+	.fade-in-image {
+	  opacity: 0;
+	  animation: fadeIn ease-in 1;
+	  animation-fill-mode: forwards;
+	  animation-duration: 9s;
+	}
+	@keyframes fadeIn {
+	  0% {
+		opacity: 0;
+	  }
+	  100% {
+		opacity: 1;
+	  }
+	}
+	.center {
+	  display: block;
+	  margin: 0 auto;
+	}
+	#myImage {
+			  display: none;
+		  }
+  </style>
+
+<body style="zoom: 0.95;">
+	<!-- Вставка svg с возможностью интерактива style="width: 100%;" -->
+	<!-- <object style="position: absolute;" type="image/png+xml" data="oper_ktc.png"></object> -->
+	<img src="oper_ktc.png"  />
+	<!-- <button> tuch me</button>
+	<script>
+		var button = document.querySelector("button");
+		button.addEventListener("click", function() {
+		  console.log("Кнопка нажата.");
+		});
+	  </script> -->
+	<!-- Хак для отключения перехвата контекстных меню объектом svg -->
+	<div style="position:fixed;top:0;left:0;bottom:0;right:0;">
+		<img id="randomGif" class="fade-in-image" width="100%" height="auto">
+	</div>
+	
+	<div
+		scheme="oper_ktc"
+		lib="oper_ktc"
+		type="mnemonica"
+		users="ktc_duty,esmal,crow,void,tai_eng,tai_duty,pto-gen"
+		admins="esmal,crow,tai_eng,void"
+		highlight-timeout="3",
+		log="true"
+	></div>
+	<div
+		scheme="tags"
+		type="insql"
+		users="ktc_duty,esmal,crow,void,tai_eng"
+		admins="esmal,crow,tai_eng,void"
+	></div>
+	<!-- анимация ПЭН-4 <img data-id="116" x="725" y="813" image="nasos" image-tag="oper_ktc_732" def-state="red">-->
+	<div style="position: absolute; width: 100px; height: 50px; top: 920px; left: 50px;" onclick="gif()">
+		<img id="gif" src="nasos.gif" style="display: none;" x="-55" y="-123"/>
+	</div>
+	<script>
+		function gif() {
+			document.getElementById('gif').style.display = 'inherit'
+			setTimeout(function () { 
+				document.getElementById('gif').style.display = 'none'
+			 }, 5000)
+		}
+	</script> 
+	<!-- анимация ПЭН-5 -->
+	<div style="position: absolute; width: 100px; height: 50px; top: 920px; left: 500px;" onclick="startMove()">
+		<img id="image" src="Nasos5.svg" style="display: none;" x="500" y="-500"/>
+	</div>
+	<script>
+		 var image = document.getElementById("image");
+    var posX = 0;
+    var posY = 0;
+    var speedX = 5; // Скорость по оси X
+    var speedY = 5; // Скорость по оси Y
+	var move = true
+
+	function startMove() {
+		move = true
+		document.getElementById('image').style.display = 'inherit'
+		moveImage()
+		setTimeout(function () { move = false; document.getElementById('image').style.display = 'none' }, 5000)
+	}
+
+	function moveImage() {
+		posX += speedX;
+		posY += speedY;
+		image.style.left = posX + "px";
+		image.style.top = posY + "px";
+	
+		// Проверка на достижение границ окна браузера
+		if (posX >= window.innerWidth - image.width-900 || posX <= -500) {
+			speedX *= -1; // Изменение направления движения по оси X
+		}
+		if (posY >= window.innerHeight - image.height-800 || posY <= -500) {
+			speedY *= -1; // Изменение направления движения по оси Y
+		}
+		
+		if (move == true) requestAnimationFrame(moveImage); // Рекурсивный вызов функции анимации
+	}
+    
+    // moveImage(); // Запуск анимации
+	</script> 
+	<!-- анимация ПЭН-6 -->
+	<!-- <div style="position: absolute; width: 100px; height: 50px; top: 830px; left: 700px;" onclick="den()">
+		<img id="medved" src="3It1.gif" style="display: none;" x="0" y="-130"/>
+	</div>
+	<script>
+		function den() {
+			document.getElementById('medved').style.display = 'inherit'
+			setTimeout(function () { 
+				document.getElementById('medved').style.display = 'none'
+			 }, 6000)
+		}
+	</script>   -->
+
+	<!-- <script>
+
+		setInterval(function () {
+			
+		}, 1000)
+//<img X="320" Y="500" tag="oper_ktc_665" type="image" evl="src = (oper_ktc_665 == 'green') ? 'img/vkl.gif' : 'img/otkl.gif'" />
+
+// evl="if(oper_ktc_665!=elements/zadver_red.svg){vl='img/3.png'}else{vl='img/3It1.gif'}"
+
+// <!-- Фон вертилятора -->
+// <!-- <img X="60" Y="400" style="height: 280px; width: 240px;" tag="N01_UM20E002" type="image" evl="if(N01_UM20E002!=0){vl='img/Nasos_work.png'}else{vl='img/Nasos_stop.png'}" />
+
+// Состояние (включен/отключен)
+// <img X="320" Y="500" tag="N01_UM20E002" type="image" evl="if(N01_UM20E002!=0){vl='img/vkl.gif'}else{vl='img/otkl.gif'}" />
+
+// Вентилятор (140, 490 - координаты (центр), 260,310 - размер, 1530 - максимум оборотов, если тег=0, то насос стоит) 
+// <div tag="N01_UM10Y001" type="spinner:92,468,168,20,img/Propeller.png"></div> 
+
+	</script> -->
+	<script src="../_/lib/jquery-1.12.4.min.js"></script>
+	<script src="../_/lib/jquery-ui.min.js"></script>
+	<script src="../_/js/mnemonica-0.8.js?0"></script>
+	
+	<script>
+		// Получаем ссылку на элемент картинки
+   const imageElement = document.getElementById("randomGif");
+
+		// Устанавливаем таймер для скрытия картинки через 3 секунды
+  let timeoutId;
+	function hideImage() {
+	imageElement.style.display = "block";
+		}
+	function showImage() {
+	imageElement.style.display = "none";
+	clearTimeout(timeoutId);
+	timeoutId = setTimeout(hideImage, 2000); // Скрыть через 3 секунды
+		}
+
+		// Обработчик события "mousemove" для отслеживания движения мыши
+  document.addEventListener("mousemove", showImage);
+</script>
+
+<div class="gif-container">
+<img  src="snegovik.gif" width="100%" height="auto">
+</div>
+
+</body>
+
+</html>

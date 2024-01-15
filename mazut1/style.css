@@ -1,0 +1,25 @@
+body { 
+	background: #000000; 
+}
+
+.div_black,
+.div_time {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16pt;
+	background: #fee3c3;
+	color: rgb(0, 0, 0);
+	border: 3px inset #c0c2ce;
+	width: 70px
+}
+
+.div_time {
+	width: 200px
+}
+
+.link {
+	width: 70px;
+	color: rgb(32, 218, 15);
+	font-family: GostARegular;
+}

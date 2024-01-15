@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html>
+	
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>KA3</title>
+	<link rel="stylesheet" href="../_/css/GostARegular.css" />
+	<link rel="stylesheet" href="../_/css/CHECK.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<!-- ФОН-->
+	<img id="FON" src="img/fon.png" style="position: absolute; top: 0; left: 0; width: 1400px; height: 870px;" />
+
+	<div scheme="tags">
+		<img
+			x="162"
+			y="215"
+			title="состояние ВД-3А"
+			tags="K31_SVD3A139"
+			type="image"
+			evl="if (K31_SVD3A139==0){src='img/VD3A/CXNOT.png'}
+				else if (K31_SVD3A139==1){src='img/VD3A/SOBPC.png'}
+				else if (K31_SVD3A139==2){src='img/VD3A/VKPC.png'}
+				else if (K31_SVD3A139==4){src='img/VD3A/SOBPR.png'}
+				else if (K31_SVD3A139==8){src='img/VD3A/VKPR.png'}"
+			style="width:510px; height:50px" />
+
+		<img x="730" y="215" title="состояние ВД-3Б" tags="K31_SVD3B141" type="image"
+			evl="if (K31_SVD3B141==0){src='img/VD3B/CXNOT.png'}
+			else if (K31_SVD3B141==1){src='img/VD3B/SOBPC.png'}
+			else if (K31_SVD3B141==2){src='img/VD3B/VKPC.png'}
+			else if (K31_SVD3B141==4){src='img/VD3B/SOBPR.png'}
+			else if (K31_SVD3B141==8){src='img/VD3B/VKPR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:510px;height:50px">
+
+			<img x="169" y="653" title="состояние Д-3А" tags="K31_S3A138" type="image"
+			evl="if (K31_S3A138==0){src='img/D3A/CXNOT.png'}
+			else if (K31_S3A138==1){src='img/D3A/SOBPC.png'}
+			else if (K31_S3A138==2){src='img/D3A/VKPC.png'}
+			else if (K31_S3A138==4){src='img/D3A/SOBPR.png'}
+			else if (K31_S3A138==8){src='img/D3A/VKPR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:510px;height:50px">
+
+			<img x="730" y="653" title="состояние Д-3Б" tags="K31_S3B140" type="image"
+			evl="if (K31_S3B140==0){src='img/D3B/CXNOT.png'}
+			else if (K31_S3B140==1){src='img/D3B/SOBPC.png'}
+			else if (K31_S3B140==2){src='img/D3B/VKPC.png'}
+			else if (K31_S3B140==4){src='img/D3B/SOBPR.png'}
+			else if (K31_S3B140==8){src='img/D3B/VKPR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:510px;height:50px">
+
+			<div X="690" Y="140" title="Значение уставки воздуха" class="div_black" tags="K31_А866f" evl="vl=(K31_А866f).toFixed(2)"></div>
+
+			<div X="690" Y="410" title=" Давление воздуха к котлу" class="div_black" tags="K31_P_Air" evl="vl=(K31_P_Air).toFixed(2)"></div>
+
+			<div X="690" Y="545" title="Разряжение" class="div_black" tags="K31_FD221" evl="vl=(K31_FD221).toFixed(2)"></div>
+
+			<div X="910" Y="90" title="Расход газа к котлу" class="div_black" tags="K31_Q_Gaz" evl="vl=(K31_Q_Gaz).toFixed(2)"></div>
+
+			<div X="1135" Y="90" title="Расход мазута к котлу" class="div_black" tags="K31_Q_BlOil" evl="vl=(K31_Q_BlOil).toFixed(2)"></div>
+
+			<div X="400" Y="390" title="Значение уставки по частоте ВД-3А(Гц)" class="div_black" tags="K31_VD3A868" evl="vl=(K31_VD3A868).toFixed(2)"></div>
+
+			<div X="985" Y="390" title="Значение уставки по частоте ВД-3Б(Гц)" class="div_black" tags="K31_VD3B870" evl="vl=(K31_VD3B870).toFixed(2)"></div>
+
+			<div X="215" Y="570" title="TE Д-3А" class="div_black" tags="K31_BKT1_Dis3A" evl="vl=(K31_BKT1_Dis3A).toFixed(2)"></div>
+
+			<div X="400" Y="570" title="Разряжение Д-3А" class="div_black" tags="K31_P_Dis3A" evl="vl=(K31_P_Dis3A).toFixed(2)"></div>
+
+			<div X="480" Y="793" title="Значение уставки по частоте Д-3А" class="div_black" tags="K31_F3A876" evl="vl=(K31_F3A876).toFixed(2)"></div>
+
+			<div X="950" Y="570" title="TE Д-3Б" class="div_black" tags="K31_BKT2_Dis3B" evl="vl=(K31_BKT2_Dis3B).toFixed(2)"></div>
+
+			<div X="1140" Y="570" title="Разряжение Д-3Б" class="div_black" tags="K31_P_Dis3B" evl="vl=(K31_P_Dis3B).toFixed(2)"></div>
+
+			<div X="1045" Y="793" title="Значение уставки по частоте Д-3Б" class="div_black" tags="K31_F3B878" evl="vl=(K31_F3B878).toFixed(2)"></div>
+
+			<img x="238" y="58" title="Режим работы вентиляции | Автомат" tags="K31_D191" type="image"
+			evl="if (K31_D191==1){src='img/kn/AVTRED.png'}
+			else if (K31_D191==0){src='img/kn/AVTGR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:53px">
+
+			<img x="239" y="120" title="Режим работы вентиляции | Ручной" tags="K31_D191" type="image"
+			evl="if (K31_D191==0){src='img/kn/RUKRED.png'}
+			else if (K31_D191==1){src='img/kn/RUKGR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:53px">
+
+			<img x="206" y="283" title="Режим работы ВД-3А рег вкл" tags="K31_RegVD3A191" type="image"
+			evl="if (K31_RegVD3A191==0){src='img/kn/RVKRED.png'}
+			else if (K31_RegVD3A191==1){src='img/kn/RVKGR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:55px">
+
+			<img x="510" y="283" title="Режим работы ВД-3А рег выкл" tags="K31_RegVD3A191" type="image"
+			evl="if (K31_RegVD3A191==0){src='img/kn/ROTGR.png'}
+			else if (K31_RegVD3A191==1){src='img/kn/ROTRED.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:55px">
+
+			<img x="787" y="283" title="Режим работы ВД-3Б рег вкл" tags="K31_RegVD3B191" type="image"
+			evl="if (K31_RegVD3B191==0){src='img/kn/RVKRED.png'}
+			else if (K31_RegVD3B191==1){src='img/kn/RVKGR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:55px">
+
+		<img x="1091" y="283" title="Режим работы ВД-3Б рег выкл" tags="K31_RegVD3A191" type="image"
+			evl="if (K31_RegVD3B191==0){src='img/kn/ROTGR.png'}
+			else if (K31_RegVD3B191==1){src='img/kn/ROTRED.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:55px">
+
+		<img x="181" y="724" title="Режим работы Д-3А рег вкл" tags="K31_RegD3A190" type="image"
+			evl="if (K31_RegD3A190==0){src='img/kn/RVKRED.png'}
+			else if (K31_RegD3A190==1){src='img/kn/RVKGR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:55px">
+
+		<img x="181" y="785" title="Режим работы Д-3А рег выкл" tags="K31_RegVD3A191" type="image"
+			evl="if (K31_RegD3A190==0){src='img/kn/ROTGR.png'}
+			else if (K31_RegD3A190==1){src='img/kn/ROTRED.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:55px">
+
+		<img x="743" y="724" title="Режим работы Д-3Б рег вкл" tags="K31_RegD3A190" type="image"
+			evl="if (K31_RegD3B190==0){src='img/kn/RVKRED.png'}
+			else if (K31_RegD3B190==1){src='img/kn/RVKGR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:55px">
+
+		<img x="743" y="785" title="Режим работы Д-3Б рег выкл" tags="K31_RegD3B190" type="image"
+			evl="if (K31_RegD3B190==0){src='img/kn/ROTGR.png'}
+			else if (K31_RegD3B190==1){src='img/kn/ROTRED.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:120px;height:55px">
+
+		<img x="1005" y="129" title="Индикатор топлива | Газ макс" tags="K31_GazMax" type="image"
+			evl="if (K31_GazMax==1){src='img/kn/PR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:40px;height:53px">
+
+		<img x="897" y="129" title="Индикатор топлива | Газ мин" tags="K31_GazMin" type="image"
+			evl="if (K31_GazMin==1){src='img/kn/PR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:40px;height:53px">
+
+		<img x="1115" y="129" title="Мазут" tags="K31_Maz" type="image"
+			evl="if (K31_Maz==1){src='img/kn/PR.png'}"
+			style="display: block; position: absolute; left: 320px; top: 210px;width:40px;height:53px">
+
+		<div x="1112" y="12" title="Время" class="div_time" tags="Time"></div>
+	</div>
+
+	<!-- ГАЗ МИН-->
+	<div id="overlay1" class="overlay"> 
+		<div class="popup">
+			<button class="close" title="Закрыть окно" onclick="swa2(1)"></button>
+			<p class="zag">ГАЗ МИН</p>
+			<p>
+				<img src="img/karta/GMIN.png" alt="" style="width:600px;height:500px">
+			</p>
+		</div>
+	</div>
+	<button X="1270" Y="100" onclick="swa(1)" type="button">ГАЗ МИН</button>	
+			
+	<!-- ГАЗ МАКС-->
+	<div id="overlay2" class="overlay">
+		<div class="popup">
+			<button class="close" title="Закрыть окно" onclick="swa2(2)"></button>
+			<p class="zag">ГАЗ МАКС</p>
+			<p>
+				<img src="img/karta/GMAX.png" alt="" style="width:600px;height:500px">
+			</p>
+		</div>
+	</div>
+	<button  X="1270" Y="150" onclick="swa(2)" type="button">ГАЗ МАКС</button>	
+
+	<!-- Мазут-->
+	<div id="overlay3" class="overlay">
+		<div class="popup">
+			<button class="close" title="Закрыть окно" onclick="swa2(3)"></button>
+			<p class="zag">МАЗУТ</p>
+			<p>
+				<img src="img/karta/MAZ.png" alt="" style="width:600px;height:500px">
+			</p>
+		</div>
+	</div>
+	<button X="1270" Y="200" onclick="swa(3)" type="button">МАЗУТ</button>
+
+	<script>
+		function swa(i){
+			var b = document.getElementById('overlay'+i);
+			b.style.visibility = 'visible';
+			b.style.opacity = '1';
+			b.style.transition = 'all 0.7s ease-out 0s';
+		}
+		function swa2(i){
+			var b = document.getElementById('overlay' + i);
+			b.style.visibility = 'hidden';
+			b.style.opacity = '0';
+		}
+	</script>
+
+	<script src="../_/lib/jquery-1.12.4.min.js"></script>
+	<script src="../_/js/mnemonica-0.8.js?1"></script>
+</body>
+
+</html>

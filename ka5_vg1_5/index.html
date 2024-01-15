@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>КА-3. Визограф № 2. Мнемосхема 1</title>
+	<link rel="stylesheet" href="./../_/css/GostARegular.css" />
+	<link rel="stylesheet" href="./style.css?06.12.2022" />
+</head>
+
+<body>
+	<!-- height: 822px; -->
+	<img src="./img/KA5_VG1_5.PNG?1" style="position: absolute; top: 50px; width: 1120px; z-index: 0;"/>
+	<div scheme="tags" fix="0" admins="asu_lab,void"></div>
+
+	<div class="shirma" onclick="vis('shirm4', 'theImage')" style="left: 207px;"></div>
+	<div class="shirma" onclick="vis('shirm5', 'theImage')" style="left: 246px;"></div>
+	<div class="shirma" onclick="vis('shirm6', 'theImage')" style="left: 285px;"></div>
+	<div class="shirma" onclick="vis('shirm7', 'theImage')" style="left: 324px;"></div>
+	<div class="shirma" onclick="vis('shirm8', 'theImage')" style="left: 363px;"></div>
+	<div class="shirma" onclick="vis('shirm9', 'theImage')" style="left: 402px;"></div>
+	<div class="shirma" onclick="vis('shirm1', 'theImage')" style="left: 494px;"></div>
+	<div class="shirma" onclick="vis('shirm2', 'theImage')" style="left: 533px;"></div>
+	<div class="shirma" onclick="vis('shirm3', 'theImage')" style="left: 572px;"></div>
+	<div class="shirma" onclick="vis('shirm10', 'theImage')" style="left: 611px;"></div>
+	<div class="shirma" onclick="vis('shirm11', 'theImage')" style="left: 650px;"></div>
+	<div class="shirma" onclick="vis('shirm12', 'theImage')" style="left: 689px;"></div>
+	
+	<img src="img/Shirma.png"  width="150px" style="position: absolute; top: 50px; left: 385px; visibility: hidden; z-index: 100;"  id="theImage">
+	<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: aqua; opacity: 0.1; visibility: hidden; z-index: 50;" id="overlay" onclick="hid()"></div>
+
+	<div class="zmeeviki" onclick="vis(undefined, 'theImage2', 'zmeevikX')"></div>
+	<img src="img/gig.jpeg" width="500px" style="position: absolute; top: 100px; left: 209px; visibility: hidden; z-index: 100;"  id="theImage2">
+	
+	<script>
+
+		function vis(id_parametr, id_image, class_name) {
+		document.getElementById(id_image).style.visibility = "visible";
+		document.getElementById("overlay").style.visibility = "visible";
+		if (id_parametr != undefined) document.getElementById(id_parametr).style.visibility = "visible";
+		if (class_name == undefined) return;
+		var a = document.getElementsByClassName(class_name);
+		for(var i=0; i<a.length; i++) 
+			a[i].style.visibility = "visible"		}
+
+		function hid() {
+		document.getElementById("theImage").style.visibility = "hidden"
+		document.getElementById("theImage2").style.visibility = "hidden";
+		document.getElementById("overlay").style.visibility = "hidden";
+		var a = document.getElementsByClassName("shirmX");
+		for(var i=0; i<a.length; i++) 
+			a[i].style.visibility = "hidden" ;
+		var a = document.getElementsByClassName("zmeevikX");
+		for(var i=0; i<a.length; i++) 
+			a[i].style.visibility = "hidden" ;		}
+
+	</script>
+
+	
+
+	<script src="./../_/js/mnemonica-0.6.js?1"></script>
+</body>
+
+</html>	

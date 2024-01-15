@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG nasos.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="58px" height="58px"
+		viewBox="0 0 42.8423 42.8424" xml:space="preserve" color-interpolation-filters="sRGB" class="st5">
+	<v:documentProperties v:langID="8192" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#00b0f0;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#ff0000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:#d8d8d8}
+		.st4 {stroke:#d8d8d8;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st5 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="group28-1" transform="translate(0.375,-0.375)" v:mID="28" v:groupContext="group">
+			<title>Лист.28</title>
+			<g id="shape24-2" v:mID="24" v:groupContext="shape">
+				<title>Лист.24</title>
+				<ellipse cx="21.0462" cy="21.7962" rx="21.0462" ry="21.0462" class="st1"/>
+			</g>
+			<g id="shape25-4" v:mID="25" v:groupContext="shape" transform="translate(4.0383,-4.16717)">
+				<title>Лист.25</title>
+				<ellipse cx="17.0079" cy="26.0194" rx="17.0079" ry="16.823" class="st2"/>
+			</g>
+			<g id="shape26-6" v:mID="26" v:groupContext="shape" transform="translate(7.36444,-8.60505)">
+				<title>Лист.26</title>
+				<path d="M15.06 30.51 A1.11288 1.13794 -180 0 0 14.14 28.98 A10.6912 10.1932 1.93 0 1 25.46 19.46 A10.8736 10.2584
+							 160.7 0 1 15.06 30.51 ZM13.55 31.31 A1.1531 1.13407 -175 0 0 15.18 30.51 A10.8947 10.329 96.72 0 1 23.78
+							 42.84 A11.0744 10.4009 77.31 0 1 13.55 31.31 ZM14.2 28.69 A1.11119 1.10543 -175 0 0 12.62 29.47 A10.6194
+							 9.9537 96.42 0 1 4.34 17.46 A10.7849 10.032 79.94 0 1 14.2 28.69 ZM12.62 29.4 A1.15877 1.15877 -180
+							 0 0 13.29 31.1 A11.1318 10.3799 11.31 0 1 -0 38.61 A11.3016 10.4649 175.91 0 1 12.62 29.4 Z"
+						class="st3"/>
+				<path d="M15.06 30.51 A1.11288 1.13794 -180 0 0 14.14 28.98 A10.6912 10.1932 1.93 0 1 25.46 19.46 A10.8736 10.2584
+							 160.7 0 1 15.06 30.51" class="st4"/>
+				<path d="M13.55 31.31 A1.1531 1.13407 -175 0 0 15.18 30.51 A10.8947 10.329 96.72 0 1 23.78 42.84 A11.0744 10.4009
+							 77.31 0 1 13.55 31.31" class="st4"/>
+				<path d="M14.94 30.45 A1.23561 1.23561 149.14 1 1 13.92 28.78" class="st4"/>
+				<path d="M14.2 28.69 A1.11119 1.10543 -175 0 0 12.62 29.47 A10.6194 9.9537 96.42 0 1 4.34 17.46 A10.7849 10.032 79.94
+							 0 1 14.2 28.69" class="st4"/>
+				<path d="M12.62 29.4 A1.15877 1.15877 -180 0 0 13.29 31.1 A11.1318 10.3799 11.31 0 1 -0 38.61 A11.3016 10.4649 175.91
+							 0 1 12.62 29.4" class="st4"/>
+			</g>
+		</g>
+	</g>
+</svg>

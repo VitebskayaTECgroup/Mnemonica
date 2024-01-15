@@ -1,0 +1,142 @@
+body {
+	background: #000000;
+	color: #fff;
+	overflow-y: hidden;
+	overflow-x: auto;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 13px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 97em;
+}
+
+.grid {
+	width: 100%;
+}
+
+.grid td {
+	vertical-align: top;
+	/* padding: .25em; */
+	/* border: 1px solid #d41a1a; */
+}
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 2px solid #323232;
+}
+
+.table:hover {
+	border-color: #f3aa07;
+}
+
+.table td {
+	background: #111;
+	border: 1px solid #222;
+	/* padding: .1em; */
+	vertical-align: middle;
+}
+
+.table th {
+	color: #bbb;
+	background: #222;
+	border: 1px solid #222;
+	font-weight: 400;
+}
+
+.table tr:hover td,
+.table tr:hover th {
+	background: #333;
+}
+
+.left th {
+	text-align: left;
+	padding-left: .5em;
+}
+
+h3 {
+	margin: .5em;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+h4 {
+	margin: 0;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+div[tags] {
+	color: #01ff05;
+	font-weight: 600;
+	text-align: center;
+	font-size: 1.35em;
+	width: 100%;
+	min-width: 3em;
+	min-height: 1.35em;
+}
+
+div[tags].warning {
+	color: #f3aa07;
+	border-color: #8b7838;
+}
+
+div[tags].blink_alarm {
+	color: #ff0000;
+	border-color: #ff0000;
+}
+
+div[tags].blink_alarm_inverted {
+	color: #fff;
+}
+
+.check div {
+	color: #8b7838;
+}
+
+.diagnostic td {
+	border-color: transparent;
+}
+
+.diagnostic div {
+	border: 1px solid #185019;
+	min-width: 2em;
+	font-size: 1em;
+}
+
+.asu {
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	padding: 4px 6px;
+	display: block;
+	background: #333;
+	color: #fff;
+	border: 1px solid #fff;
+	display: none;
+	text-decoration: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+	transition-property: box-shadow, drop-shadow, filter, font-weight;
+	transition-duration: 1s;
+}
+
+div[highlight] {
+	filter: drop-shadow(0 0 20px green);
+}
+
+div[highlight].warning {
+	filter: drop-shadow(0 0 20px #f3aa07);
+}
+
+div[highlight].blink_alarm,
+div[highlight].blink_alarm_inverted {
+	filter: none;
+}

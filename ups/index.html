@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Мониторинг ИБП</title>
+	<link rel="stylesheet" href="../_/css/GostARegular.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div scheme="tags">
+		<table>
+			<thead>
+				<tr>
+					<th colspan="7">Мониторинг источников бесперебойного питания</th>
+				</tr>
+				<tr>
+					<th>ИБП</th>
+					<th>Состояние</th>
+					<th>Входное напряжение (В)</th>
+					<th>Нагрузка (%)</th>
+					<th>Заряд батареи (%)</th>
+					<th>Время до отключения (мин)</th>
+					<th>Температура (&deg;C)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td title="ИБП №1 | Центральная серверная. СБК I очередь, отм. 0,0 м. &#013;APC Smart-UPS 1000VA USB & Serial RM 2U 230V" class="caption">UPS-1. ЦС</td>
+					<td>
+						<span title="ИБП №1 | Состояние" tags="P01_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №1 | Напряжение"
+						tags="P01_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<span
+						title="ИБП №1 | Нагрузка"
+						tags="P01_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №1 | Заряд батареи"
+						tags="P01_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №1 | Время до отключения"
+						tags="P01_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №1 | Температура"
+						tags="P01_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №2 | Линия А. Серверная АСУ ТП. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS RT 6000VA 230 V [SURT6000XLI]+ 2 блока батарей" class="caption">UPS-2. L-A</td>
+					<td>
+						<span title="ИБП №2 | Состояние" tags="P02_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №2 | Напряжение"
+						tags="P02_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №2 | Нагрузка"
+						tags="P02_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №2 | Заряд батареи"
+						tags="P02_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №2 | Время до отключения"
+						tags="P02_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №2 | Температура"
+						tags="P02_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №3 | Линия Б. Серверная АСУ ТП. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS SRT 5000VA RM 230V (SRT5KRMXLI)" class="caption">UPS-3. L-B</td>
+					<td>
+						<span title="ИБП №3 | Состояние" tags="P03_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №3 | Напряжение"
+						tags="P03_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №3 | Нагрузка"
+						tags="P03_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №3 | Заряд батареи"
+						tags="P03_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №3 | Время до отключения"
+						tags="P03_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №3 | Температура"
+						tags="P03_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №4 | Шкаф ЛМЗ-97 ЦТЩУ. К/о II оч., отм. +8,0 м. &#013;ИНЭЛТ Gamma 3K+ 1 блок батарей" class="caption">UPS-4. ЛМЗ-97</td>
+					<td>
+						<span title="ИБП №4 | Состояние" tags="P04_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №4 | Напряжение"
+						tags="P04_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №4 | Нагрузка"
+						tags="P04_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №4 | Заряд батареи"
+						tags="P04_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №4 | Время до отключения"
+						tags="P04_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №4 | Температура"
+						tags="P04_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №5 | Шкаф ЛМЗ-97 ЦТЩУ. К/о II оч., отм. +8,0 м. &#013;ИНЭЛТ Gamma 3K+ 1 блок батарей" class="caption">UPS-5. ЛМЗ-97</td>
+					<td>
+						<span title="ИБП №5 | Состояние" tags="P05_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №5 | Напряжение"
+						tags="P05_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №5 | Нагрузка"
+						tags="P05_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №5 | Заряд батареи"
+						tags="P05_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №5 | Время до отключения"
+						tags="P05_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №5 | Температура"
+						tags="P05_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №6 | СЧР ТДМ к/а ст. № 3. Серверная АСУ ТП. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS RT 2000VA 230V [SURT2000XLI]" class="caption">UPS-6. РЭП КА-3</td>
+					<td>
+						<span title="ИБП №6 | Состояние" tags="P06_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №6 | Напряжение"
+						tags="P06_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №6 | Нагрузка"
+						tags="P06_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №6 | Заряд батареи"
+						tags="P06_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №6 | Время до отключения"
+						tags="P06_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №6 | Температура"
+						tags="P06_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №7 | Контроллер ГМ ПЭН-6. Серверная АСУ ТП. К/о II оч., отм. +8,0 м. &#013;APC SMART-UPS 750VA LCD 230V (SMT750I)" class="caption">UPS-7. ГМ ПЭН-6</td>
+					<td>
+						<span title="ИБП №7 | Состояние" tags="P07_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №7 | Напряжение"
+						tags="P07_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №7 | Нагрузка"
+						tags="P07_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №7 | Заряд батареи"
+						tags="P07_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №7 | Время до отключения"
+						tags="P07_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №7 | Температура"
+						tags="P07_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №8 | Шкаф АПУ ТА-3. ЦТЩУ. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS RT 1000VA 230V" class="caption">UPS-8. АПУ ТА-3</td>
+					<td>
+						<span title="ИБП №8 | Состояние" tags="P08_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №8 | Напряжение"
+						tags="P08_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №8 | Нагрузка"
+						tags="P08_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №8 | Заряд батареи"
+						tags="P08_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №8 | Время до отключения"
+						tags="P08_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №8 | Температура"
+						tags="P08_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №9 | Телекоммуникационный шкаф. СБК II очередь, кабинет ЗНЦ ТАИ, отм. + 6,0 м. &#013;APC Smart-UPS 750VA 230V [SUA750I]" class="caption">UPS-9. СБК-2</td>
+					<td>
+						<span title="ИБП №9 | Состояние" tags="P09_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №9 | Напряжение"
+						tags="P09_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №9 | Нагрузка"
+						tags="P09_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №9 | Заряд батареи"
+						tags="P09_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №9 | Время до отключения"
+						tags="P09_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №9 | Температура"
+						tags="P09_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №10 | Телекоммуникационный шкаф. АБК, кабинет СВТ ЦТАИ, 3 этаж. &#013;APC Smart-UPS RT 2000VA 230V [SURT2000XLI]" class="caption">UPS-10. АБК</td>
+					<td>
+						<span title="ИБП №10 | Состояние" tags="P10_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №10 | Напряжение"
+						tags="P10_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №10 | Нагрузка"
+						tags="P10_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №10 | Заряд батареи"
+						tags="P10_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №10 | Время до отключения"
+						tags="P10_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №10 | Температура"
+						tags="P10_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №11 | Шкаф операторских станций. ЦТЩУ. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS RT 2000VA 230V [SURT2000XLI]+ 2 блока батарей" class="caption">UPS-11. ШОС</td>
+					<td>
+						<span title="ИБП №11 | Состояние" tags="P11_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №11 | Напряжение"
+						tags="P11_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №11 | Нагрузка"
+						tags="P11_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №11 | Заряд батареи"
+						tags="P11_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №11 | Время до отключения"
+						tags="P11_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №11 | Температура"
+						tags="P11_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №12 | Шкаф операторских станций. ЦТЩУ. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS RT 2000VA 230V [SURT2000XLI]+ 2 блока батарей" class="caption">UPS-12. ШОС</td>
+					<td>
+						<span title="ИБП №12 | Состояние" tags="P12_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №12 | Напряжение"
+						tags="P12_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №12 | Нагрузка"
+						tags="P12_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №12 | Заряд батареи"
+						tags="P12_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №12 | Время до отключения"
+						tags="P12_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №12 | Температура"
+						tags="P12_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №13 | Шкаф операторских станций. ЦТЩУ. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS RT 2000VA 230V [SURT2000XLI]+ 2 блока батарей" class="caption">UPS-13. ШОС</td>
+					<td>
+						<span title="ИБП №13 | Состояние" tags="P13_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №13 | Напряжение"
+						tags="P13_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №13 | Нагрузка"
+						tags="P13_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №13 | Заряд батареи"
+						tags="P13_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №13 | Время до отключения"
+						tags="P13_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №13 | Температура"
+						tags="P13_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №14 | Шкаф операторских станций. ЦТЩУ. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS RT 2000VA 230V [SURT2000XLI]+ 2 блока батарей" class="caption">UPS-14. ШОС</td>
+					<td>
+						<span title="ИБП №14 | Состояние" tags="P14_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №14 | Напряжение"
+						tags="P14_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №14 | Нагрузка"
+						tags="P14_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №14 | Заряд батареи"
+						tags="P14_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №14 | Время до отключения"
+						tags="P14_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №14 | Температура"
+						tags="P14_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №15 | Сервер ЭКОМ-3000. Центральная серверная. СБК I очередь, отм. 0,0 м. &#013;APC Smart-UPS 1000VA USB & Serial RM 2U 230V" class="caption">UPS-15. ЭКОМ-3000</td>
+					<td>
+						<span title="ИБП №15 | Состояние" tags="P15_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №15 | Напряжение"
+						tags="P15_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №15 | Нагрузка"
+						tags="P15_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №15 | Заряд батареи"
+						tags="P15_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №15 | Время до отключения"
+						tags="P15_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №15 | Температура"
+						tags="P15_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №16 | Шкаф ИТ-14 ЦТЩУ. К/о II оч., отм. +8,0 м. &#013;APC Smart-UPS 1000VA USB & Serial RM 2U 230V" class="caption">UPS-16. ИТ-14</td>
+					<td>
+						<span title="ИБП №16 | Состояние" tags="P16_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №16 | Напряжение"
+						tags="P16_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №16 | Нагрузка"
+						tags="P16_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №16 | Заряд батареи"
+						tags="P16_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №16 | Время до отключения"
+						tags="P16_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №16 | Температура"
+						tags="P16_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №17 | Шкаф коммерческого учета. Т/о II очереди, отм. +8,0 м. &#013;APC Smart-UPS 750VA 230V [SUA750I]" class="caption">UPS-17. ШКУ</td>
+					<td>
+						<span title="ИБП №17 | Состояние" tags="P17_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №17 | Напряжение"
+						tags="P17_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №17 | Нагрузка"
+						tags="P17_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №17 | Заряд батареи"
+						tags="P17_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №17 | Время до отключения"
+						tags="P17_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №17 | Температура"
+						tags="P17_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №18 | ГРП. Отм. 0,0 м. &#013;APC Smart-UPS RT 1000VA, 230V" class="caption">UPS-18. ГРП</td>
+					<td>
+						<span title="ИБП №18 | Состояние" tags="P18_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №18 | Напряжение"
+						tags="P18_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №18 | Нагрузка"
+						tags="P18_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №18 | Заряд батареи"
+						tags="P18_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №18 | Время до отключения"
+						tags="P18_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №18 | Температура"
+						tags="P18_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №19 | Телекоммуникационный шкаф ТТЦ. Кабинет кладовщика ТТЦ, 2 этаж. &#013;APC Smart-UPS 750VA 230V [SUA750I] " class="caption">UPS-19. ТТЦ</td>
+					<td>
+						<span title="ИБП №19 | Состояние" tags="P19_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №19 | Напряжение"
+						tags="P19_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №19 | Нагрузка"
+						tags="P19_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №19 | Заряд батареи"
+						tags="P19_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №19 | Время до отключения"
+						tags="P19_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №19 | Температура"
+						tags="P19_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП №20 | РЭП СН-4. &#013;APC Smart-UPS RT 2000VA 230V [SURT2000XLI]" class="caption">UPS-20. РЭП СН-4</td>
+					<td>
+						<span title="ИБП №20 | Состояние" tags="P20_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №20 | Напряжение"
+						tags="P20_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №20 | Нагрузка"
+						tags="P20_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №20 | Заряд батареи"
+						tags="P20_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №20 | Время до отключения"
+						tags="P20_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №20 | Температура"
+						tags="P20_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП № 21. Шкаф КН-3.1 неоперативного контура I очереди ЦТЩУ. &#013;APC Smart-UPS SRT 2200VA RM 230V [SRT2200RMXLI]+ блок батарей" class="caption">UPS-21. КН 3-1</td>
+					<td>
+						<span title="ИБП №21 | Состояние" tags="P21_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №21 | Напряжение"
+						tags="P21_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №21 | Нагрузка"
+						tags="P21_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №21 | Заряд батареи"
+						tags="P21_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №21 | Время до отключения"
+						tags="P21_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №21 | Температура"
+						tags="P21_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП № 22. ИБП СЧР к/а ст. № 4. Серверная АСУ ТП. &#013;APC Smart-UPS RC 1000VA 230V (SRC1KI)" class="caption">UPS-22. КА-4</td>
+					<td>
+						<span title="ИБП №22 | Состояние" tags="P22_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №22 | Напряжение"
+						tags="P22_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №22 | Нагрузка"
+						tags="P22_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №22 | Заряд батареи"
+						tags="P22_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №22 | Время до отключения"
+						tags="P22_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №22 | Температура"
+						tags="P22_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП № 23. ИБП ШПЗ КА-3, 4, 5. &#013;APC Smart-UPS SRT 2200VA RM 230V [SRT2200RMXLI]" class="caption">UPS-23. ШПЗ КА-3, 4, 5</td>
+					<td>
+						<span title="ИБП №23 | Состояние" tags="P23_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №23 | Напряжение"
+						tags="P23_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №23 | Нагрузка"
+						tags="P23_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №23 | Заряд батареи"
+						tags="P23_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №23 | Время до отключения"
+						tags="P23_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №23 | Температура"
+						tags="P23_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП № 24. ИБП АСК. &#013;APC Smart-UPS SRT 2200VA RM 230V [SRT2200RMXLI]" class="caption">UPS-24. АСК</td>
+					<td>
+						<span title="ИБП №24 | Состояние" tags="P24_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №24 | Напряжение"
+						tags="P24_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №24 | Нагрузка"
+						tags="P24_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №24 | Заряд батареи"
+						tags="P24_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №24 | Время до отключения"
+						tags="P24_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №24 | Температура"
+						tags="P24_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+				<tr>
+					<td title="ИБП № 25. РЭП СН 1-2 &#013;APC Smart-UPS SRT 2200VA RM 230V [SRT2200RMXLI]+ блок батарей" class="caption">UPS-25. РЭП СН 1-2</td>
+					<td>
+						<span title="ИБП №25 | Состояние" tags="P25_EU00S602" class="status"></span>
+					</td>
+					<td>
+						<span title="ИБП №25 | Напряжение"
+						tags="P25_EU10U001"
+						checks="210,235"
+						classes="yellow,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="200"
+						scale-max="250"></span>
+					</td>
+					<td>
+						<div
+						title="ИБП №25 | Нагрузка"
+						tags="P25_EU20E401"
+						checks="40,60"
+						classes="green,yellow,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №25 | Заряд батареи"
+						tags="P25_EU00U401"
+						checks="0,60"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="100"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №25 | Время до отключения"
+						tags="P25_SY00J802"
+						checks="20,30"
+						classes="red,yellow,green"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="500"></div>
+					</td>
+					<td>
+						<div
+						title="ИБП №25 | Температура"
+						tags="P25_EU00T001"
+						checks="15,37"
+						classes="red,green,red"
+						type="scaleX"
+						scale-height="20px"
+						scale-min="0"
+						scale-max="60"></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script src="../_/lib/jquery-1.12.4.min.js"></script>
+	<script src="../_/js/mnemonica-0.8.js?1"></script>
+</body>
+
+</html>

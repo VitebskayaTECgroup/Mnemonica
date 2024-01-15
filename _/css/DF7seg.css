@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "DF7seg";
+    src: url("fonts/DF7seg.eot");
+    src: url("fonts/DF7seg.eot?#iefix")format("embedded-opentype"),
+    url("fonts/DF7seg.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Создано Microsoft Visio, экспорт SVG Nasos5.svg Страница-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="1.77026in" height="0.6672in"
+		viewBox="0 0 127.459 48.0384" xml:space="preserve" color-interpolation-filters="sRGB" class="st4">
+	<v:documentProperties v:langID="8192" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#92d050;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#000000;font-family:Cambria;font-size:1.00001em}
+		.st3 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st4 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Страница-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="group15-1" transform="translate(0.375,-0.375)" v:mID="15" v:groupContext="group">
+			<title>Лист.15</title>
+			<g id="shape16-2" v:mID="16" v:groupContext="shape" transform="translate(8.07874,-8.73071)">
+				<title>Лист.16</title>
+				<rect x="0" y="23.6604" width="48.189" height="24.378" class="st1"/>
+			</g>
+			<g id="shape17-4" v:mID="17" v:groupContext="shape" transform="translate(56.2677,-17.0079)">
+				<title>Лист.17</title>
+				<rect x="0" y="41.0085" width="3.82677" height="7.02992" class="st1"/>
+			</g>
+			<g id="shape18-6" v:mID="18" v:groupContext="shape" transform="translate(2.83465,-4.19528)">
+				<title>Лист.18</title>
+				<rect x="0" y="43.7297" width="58.1102" height="4.30866" class="st1"/>
+			</g>
+			<g id="shape19-8" v:mID="19" v:groupContext="shape" transform="translate(5.66929,-11.3386)">
+				<title>Лист.19</title>
+				<rect x="0" y="29.6699" width="2.40945" height="18.3685" class="st1"/>
+			</g>
+			<g id="shape20-10" v:mID="20" v:groupContext="shape">
+				<title>Лист.20</title>
+				<rect x="0" y="43.8431" width="126.709" height="4.19528" class="st1"/>
+			</g>
+			<g id="shape21-12" v:mID="21" v:groupContext="shape" transform="translate(71.1496,-17.0079)">
+				<title>Лист.21</title>
+				<rect x="0" y="41.0085" width="3.82677" height="7.02992" class="st1"/>
+			</g>
+			<g id="shape22-14" v:mID="22" v:groupContext="shape" transform="translate(60.0945,-15.3496)">
+				<title>Лист.22</title>
+				<rect x="0" y="37.6919" width="10.9134" height="10.3465" class="st1"/>
+			</g>
+			<g id="shape23-16" v:mID="23" v:groupContext="shape" transform="translate(75.1181,-4.19528)">
+				<title>Лист.23</title>
+				<rect x="0" y="43.7297" width="48.189" height="4.30866" class="st1"/>
+			</g>
+			<g id="shape24-18" v:mID="24" v:groupContext="shape" transform="translate(75.1181,-8.7307)">
+				<title>Лист.24</title>
+				<desc>ПЭН-5</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="24.0945" cy="35.8494" width="48.19" height="24.378"/>
+				<path d="M45.35 48.04 A2.83464 12.189 -180 0 0 45.35 23.66 L2.83 23.66 A2.83464 12.189 -180 1 0 2.83 48.04 L2.84
+							 48.04 L45.35 48.04 Z" class="st1"/>
+				<text x="7.18" y="39.45" class="st2" v:langID="1049"><v:paragraph v:horizAlign="1"/><v:tabList/>ПЭН-5</text>			</g>
+			<g id="shape25-21" v:mID="25" v:groupContext="shape" transform="translate(80.2644,-33.4488)">
+				<title>Лист.25</title>
+				<rect x="0" y="34.5738" width="8.50394" height="13.4646" class="st1"/>
+			</g>
+			<g id="shape26-23" v:mID="26" v:groupContext="shape" transform="translate(108.283,-33.4488)">
+				<title>Лист.26</title>
+				<rect x="0" y="34.5738" width="8.50394" height="13.4646" class="st1"/>
+			</g>
+			<g id="shape27-25" v:mID="27" v:groupContext="shape" transform="translate(125.991,14.9297) rotate(90)">
+				<title>Лист.27</title>
+				<path d="M0 48.04 L24.38 48.04" class="st3"/>
+			</g>
+			<g id="shape28-28" v:mID="28" v:groupContext="shape" transform="translate(168.511,14.9297) rotate(90)">
+				<title>Лист.28</title>
+				<path d="M0 48.04 L24.38 48.04" class="st3"/>
+			</g>
+		</g>
+	</g>
+</svg>

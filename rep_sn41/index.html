@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Мнемосхема регулируемого электропривода сетевого насоса № 4</title>
+	<link rel="stylesheet" href="../_/css/GostARegular.css" />
+	<link rel="stylesheet" href="../_/css/CHECK.css" />
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <!-- ФОН страницы-->
+    <img id="FON" src="img/FON.png?29.01.2019" style="position:absolute;top:15px;left: 10px;width: 1200px">
+
+    <!-- Состояние ВПЧА-->
+    <div X="230" Y="101" class="div_one" tag="N01_UM10U701" type="array:param1" evl="vl=(N01_UM10U701)"></div>
+    
+    <!-- Авария ВПЧА-->
+    <div X="230" Y="149" class="div_one" tag="N01_UM10U702" type="array:param2" evl="vl=(N01_UM10U702)"></div>
+    
+    <!-- Давление (задано)-->
+    <div X="370" Y="252" class="div_black" tag="N01_UM10P001" evl="vl=(N01_UM10P001).toFixed(2)"></div>
+    
+    <!-- Текущее значение давления-->
+    <div X="370" Y="307" class="div_black" tag="N01_UM10P002" evl="vl=(N01_UM10P002).toFixed(2)"></div>
+    
+    <!-- Входная мощность-->
+    <div X="1000" Y="252" class="div_black" tag="N01_UM10E002" evl="vl=(N01_UM10E002).toFixed(2)"></div>
+    
+    <!-- Входное напряжение-->
+    <div X="1000" Y="307" class="div_black" tag="N01_UM10E003" evl="vl=(N01_UM10E003).toFixed(2)"></div>
+    
+    <!-- Входной ток-->
+    <div X="1000" Y="362" class="div_black" tag="N01_UM10E004" evl="vl=(N01_UM10E004).toFixed(2)"></div>
+    
+    <!-- Обороты двигателя-->
+    <div X="1000" Y="434" class="div_black" tag="N01_UM10Y001" evl="vl=(N01_UM10Y001).toFixed(2)"></div>
+    
+    <!-- Текущая частота-->
+    <div X="1000" Y="490" class="div_black" tag="N01_UM10E001" evl="vl=(N01_UM10E001).toFixed(2)"></div>
+    
+    <!-- Температура в шкафу РЭП-->
+    <div X="1000" Y="545" class="div_black" tag="N01_UM10T001" evl="vl=(N01_UM10T001).toFixed(2)"></div>
+    
+    <!-- Выходная мощность-->
+    <div X="1000" Y="618" class="div_black" tag="N01_UM20E002" evl="vl=(N01_UM20E002).toFixed(2)"></div>
+    
+    <!-- Выходное напряжение-->
+    <div X="1000" Y="672" class="div_black" tag="N01_UM20E003" evl="vl=(N01_UM20E003).toFixed(2)"></div>
+    
+    <!-- Выходной ток-->
+    <div X="1000" Y="728" class="div_black" tag="N01_UM20E004" evl="vl=(N01_UM20E004).toFixed(2)"></div>
+    
+    <!-- Время опроса-->
+    <div X="195" Y="725" class="div_time" tag="Time" evl="vl=(Time)"></div>
+    
+    <!-- Фон вертилятора -->
+    <img X="60" Y="400" style="height: 280px; width: 240px;" tag="N01_UM20E002" type="image" evl="if(N01_UM20E002!=0){vl='img/Nasos_work.png'}else{vl='img/Nasos_stop.png'}" />
+
+    <!-- Состояние (включен/отключен)-->
+    <img X="320" Y="500" tag="N01_UM20E002" type="image" evl="if(N01_UM20E002!=0){vl='img/vkl.gif'}else{vl='img/otkl.gif'}" />
+
+    <!-- Вентилятор (140, 490 - координаты (центр), 260,310 - размер, 1530 - максимум оборотов, если тег=0, то насос стоит) -->
+    <div tag="N01_UM10P001" type="spinner:92,468,168,20,img/Propeller.png"></div>
+
+    <!-- Подключаем скрипты-->
+    <script src="../_/lib/jquery.min.js"></script>
+    <script src="../_/lib/jQueryRotateCompressed.2.2.js"></script>
+    <script src="../_/js/mnemonica-0.2.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        new Mnemo({
+            // Расположение ASP скрипта, обновляющего теги
+            insqlSource: '../_/asp/taglive.asp',
+            // Установлено время активного мигания параметров, в секундах
+            blinkTimeout: 20,
+            // Установлено время запроса на обновление значений параметров
+            insqlTimeout: 5000
+        })
+    </script>
+</body>
+
+</html>

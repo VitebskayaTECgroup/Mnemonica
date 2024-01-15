@@ -1,0 +1,326 @@
+<div
+	x="245"
+	y="490"
+	title="Расчетная высота мазута (столб) № 1"
+	tags="M1_HeightCalc"
+	type="levelH"
+	level-height="216"
+	level-width="34"
+	level-scale="11.92"
+	level-image="img/noise.gif"
+	class="null"></div>
+<div
+	x="847"
+	y="490"
+	title="Расчетная высота мазута (столб) № 2"
+	tags="M2_HeightCalc"
+	type="levelH"
+	level-height="216"
+	level-width="34"
+	level-scale="11.93"
+	level-image="img/noise.gif"
+	class="null"></div>
+<div
+	x="245"
+	y="828"
+	title="Расчетная высота мазута (столб) № 3"
+	tags="M3_HeightCalc"
+	type="levelH"
+	level-height="216"
+	level-width="34"
+	level-scale="11.81"
+	level-image="img/noise.gif"
+	class="null"></div>
+<div
+	x="847"
+	y="828"
+	title="Расчетная высота мазута (столб) № 4"
+	tags="M4_HeightCalc"
+	type="levelH"
+	level-height="216"
+	level-width="34"
+	level-scale="11.81"
+	level-image="img/noise.gif"
+	class="null"></div>
+<div
+	x="222"
+	y="54"
+	class="div_black"
+	title="Общая масса сухого мазута (т)"
+	tags="M1_TotalSM,M2_TotalSM,M3_TotalSM,M4_TotalSM"
+	evl="vl=(M1_TotalSM+M2_TotalSM+M3_TotalSM+M4_TotalSM).toFixed(0)"></div>
+<div
+	x="720"
+	y="54"
+	class="div_black"
+	title="Рабочий остаток сухого мазута (т)"
+	tags="M01_AF03F701,M02_AF03F701,M03_AF03F701,M04_AF03F701"
+	evl="vl=(M04_AF03F701+M03_AF03F701+M02_AF03F701+M01_AF03F701).toFixed(0)"></div>
+<div
+	x="975"
+	y="53.9773"
+	class="div_black div_time"
+	title="Время опроса"
+	tags="Time"></div>
+<div
+	x="222"
+	y="149"
+	class="div_black"
+	title="Масса мазута, всего (т)"
+	tags="M1_TotalM,M2_TotalM,M3_TotalM,M4_TotalM"
+	evl="vl=(M1_TotalM+M2_TotalM+M3_TotalM+M4_TotalM).toFixed(0)"></div>
+<div
+	x="719"
+	y="149"
+	title="Масса мазута в приемных емкостях"
+	class="div_black"
+	tags="M00_AF03F702"></div>
+<div
+	x="988"
+	y="148"
+	title="Температура наружного воздуха"
+	class="div_black"
+	evl="vl= String(M4_T4).includes('e') ? '-' : M4_T4"
+	tags="M4_T4"></div>
+	<!-- evl="vl= M4_T4.includes('e') ? 0 : M4_T4" -->
+<div
+	x="71"
+	y="276"
+	title="Емкость № 1 | Температура верх"
+	class="div_black"
+	tags="M1_T3"></div>
+<div
+	x="72"
+	y="353"
+	title="Емкость № 1 | Температура в середине"
+	class="div_black"
+	tags="M1_T2"></div>
+<div
+	x="80"
+	y="427"
+	title="Емкость № 1 | Температура низ"
+	class="div_black"
+	tags="M1_T1"></div>
+<div
+	x="480"
+	y="249"
+	title="Емкость № 1 | Масса всего"
+	class="div_black"
+	tags="M1_TotalM"
+	evl="vl=(M1_TotalM).toFixed(0)"></div>
+<div
+	x="478"
+	y="286"
+	title="Емкость № 1 | Высота всего"
+	class="div_black"
+	tags="M1_HeightCalc"></div>
+<div
+	x="478"
+	y="348"
+	title="Емкость № 1 | Масса рабочая"
+	class="div_black"
+	tags="M1_Massa"
+	evl="vl=(M1_Massa).toFixed(0)"></div>
+<div
+	x="478"
+	y="385"
+	title="Емкость № 1 | Высота рабочая (м)"
+	class="div_black"
+	tags="M1_HeightCalc,M1_H0"
+	evl="vl=(M1_HeightCalc-M1_H0).toFixed(2)"></div>
+<div
+	x="478"
+	y="446"
+	title="Емкость № 1 | Высота мертвого остатка"
+	class="div_black"
+	tags="M1_H0"
+	evl="vl=(M1_H0).toFixed(2)"></div>
+<div
+	x="478"
+	y="483"
+	title="Емкость № 1 | Масса мертвого остатка"
+	class="div_black"
+	tags="M1_M0"
+	evl="vl=(M1_M0).toFixed(1)"></div>
+<div
+	x="682"
+	y="280"
+	title="Емкость № 2 | Температура верх"
+	class="div_black"
+	tags="M2_T3"></div>
+<div
+	x="683"
+	y="355"
+	title="Емкость № 2 | Температура в середине"
+	class="div_black"
+	tags="M2_T2"></div>
+<div
+	x="683"
+	y="421"
+	title="Емкость № 2 | Температура низ"
+	class="div_black"
+	tags="M2_T1"></div>
+<div
+	x="1085"
+	y="249"
+	title="Емкость № 2 | Масса всего"
+	class="div_black"
+	tags="M2_TotalM"
+	evl="vl=(M2_TotalM).toFixed(0)"></div>
+<div
+	x="1085"
+	y="286"
+	title="Емкость № 2 | Высота всего"
+	class="div_black"
+	tags="M2_HeightCalc"></div>
+<div
+	x="1085"
+	y="348"
+	title="Емкость № 2 | Масса рабочая"
+	class="div_black"
+	tags="M2_Massa"
+	evl="vl=(M2_Massa).toFixed(0)"></div>
+<div
+	x="1085"
+	y="385"
+	title="Емкость № 2 | Высота рабочая (м)"
+	class="div_black"
+	tags="M2_HeightCalc,M2_H0"
+	evl="vl=(M2_HeightCalc-M2_H0).toFixed(2)"></div>
+<div
+	x="1085"
+	y="446"
+	title="Емкость № 2 | Высота мертвого остатка"
+	class="div_black"
+	tags="M2_H0"
+	evl="vl=(M2_H0).toFixed(2)"></div>
+<div
+	x="1085"
+	y="483"
+	title="Емкость № 2 | Масса мертвого остатка"
+	class="div_black"
+	tags="M2_M0"
+	evl="vl=(M2_M0).toFixed(1)"></div>
+<div
+	x="80"
+	y="605"
+	title="Емкость № 3 | Температура верх"
+	class="div_black"
+	tags="M3_T3"></div>
+<div
+	x="80"
+	y="686"
+	title="Емкость № 3 | Температура в середине"
+	class="div_black"
+	tags="M3_T2"></div>
+<div
+	x="80"
+	y="772"
+	title="Емкость № 3 | Температура низ"
+	class="div_black"
+	tags="M3_T1"></div>
+<div
+	x="480"
+	y="587"
+	title="Емкость № 3 | Масса всего"
+	class="div_black"
+	tags="M3_TotalM"
+	evl="vl=(M3_TotalM).toFixed(0)"></div>
+<div
+	x="480"
+	y="625"
+	title="Емкость № 3 | Высота всего"
+	class="div_black"	
+	tags="M3_HeightCalc"></div>
+	<!-- evl="vl = M3_HeightCalc.include('e') ? 0 : M3_HeightCalc " -->
+<div
+	x="480"
+	y="686"
+	title="Емкость № 3 | Масса рабочая"
+	class="div_black"
+	tags="M3_Massa"
+	evl="vl=(M3_Massa).toFixed(0)"></div>
+<div
+	x="480"
+	y="723"
+	title="Емкость № 3 | Высота рабочая (м)"
+	class="div_black"
+	evl="vl=(M3_HeightCalc-M3_H0).toFixed(2)"
+	tags="M3_HeightCalc,M3_H0"
+	></div>
+	<!-- evl="vl=M3_HeightCalc.include('e') ? 0 : (M3_HeightCalc-M3_H0).toFixed(2)" -->
+<div
+	x="480"
+	y="784"
+	title="Емкость № 3 | Высота мертвого остатка"
+	class="div_black"
+	tags="M3_H0"
+	evl="vl=(M3_H0).toFixed(2)"></div>
+<div
+	x="480"
+	y="820"
+	title="Емкость № 3 | Масса мертвого остатка"
+	class="div_black"
+	tags="M3_M0"
+	evl="vl=(M3_M0).toFixed(1)"></div>
+<div
+	x="682"
+	y="603"
+	title="Емкость № 4 | Температура верх"
+	class="div_black"
+	tags="M4_T3"></div>
+<div
+	x="682"
+	y="685"
+	title="Емкость № 4 | Температура в середине"
+	class="div_black"
+	tags="M4_T2"></div>
+<div
+	x="682"
+	y="770"
+	title="Емкость № 4 | Температура низ"
+	class="div_black"
+	tags="M4_T1"></div>
+<div
+	x="1085"
+	y="587"
+	title="Емкость № 4 | Масса всего"
+	class="div_black"
+	tags="M4_TotalM"
+	evl="vl=(M4_TotalM).toFixed(0)"></div>
+<div
+	x="1085"
+	y="625"
+	title="Емкость № 4 | Высота всего"
+	class="div_black"	
+	tags="M4_HeightCalc"></div>
+	<!-- evl="vl = M4_HeightCalc.include('e') ? 0 : M4_HeightCalc " -->
+<div
+	x="1085"
+	y="686"
+	title="Емкость № 4 | Масса рабочая"
+	class="div_black"
+	tags="M4_Massa"
+	evl="vl=(M4_Massa).toFixed(0)"></div>
+<div
+	x="1085"
+	y="723"
+	title="Емкость № 4 | Высота рабочая (м)"
+	class="div_black"
+	evl="vl=(M4_HeightCalc-M4_H0).toFixed(2)"
+	tags="M4_HeightCalc,M4_H0" ></div>  
+	<!-- evl="vl=M4_HeightCalc.include('e') ? 0 : (M4_HeightCalc-M4_H0).toFixed(2)" --> 
+<div
+	x="1085"
+	y="784"
+	title="Емкость № 4 | Высота мертвого остатка"
+	class="div_black"
+	tags="M4_H0"
+	evl="vl=(M4_H0).toFixed(2)"></div>
+<div
+	x="1085"
+	y="820"
+	title="Емкость № 4 | Масса мертвого остатка"
+	class="div_black"
+	tags="M4_M0"
+	evl="vl=(M4_M0).toFixed(1)"></div>

@@ -1,0 +1,57 @@
+{
+	"images": {
+		"zadver": {
+			"green": {
+				"text": "Закрыта",
+				"image": "elements/zadver_green.svg"
+			},
+			"yellow": {
+				"text": "В ремонте",
+				"image": "elements/zadver_yellow.svg"
+			},
+			"red": {
+				"text": "Открыта",
+				"image": "elements/zadver_red.svg"
+			}
+						
+		},
+		
+		"zadgor": {
+			"green": {
+				"text": "Закрыта",
+				"image": "elements/zadgor_green.svg"
+			},
+			"yellow": {
+				"text": "В ремонте",
+				"image": "elements/zadgor_yellow.svg"
+			},
+			"red": {
+				"text": "Открыта",
+				"image": "elements/zadgor_red.svg"
+			}
+						
+		},
+		
+		"nasos": {
+				"red": {
+					"text": "Работа",
+					"image": "elements/nasosrab.svg"
+				},
+				"green": {
+					"text": "В резерве",
+					"image": "elements/nasosrez.svg"
+				},
+				"yellow": {
+					"text": "В ремонте",
+					"image": "elements/nasosrem.svg"
+				},
+				"white": {
+					"text": "АВР",
+					"image": "elements/nasosavr.svg"
+				}
+							
+			}
+					
+		
+	}
+}

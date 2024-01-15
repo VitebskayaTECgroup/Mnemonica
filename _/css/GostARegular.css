@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "GostARegular";
+    src: url("fonts/GostARegular.eot");
+    src: url("fonts/GostARegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/GostARegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

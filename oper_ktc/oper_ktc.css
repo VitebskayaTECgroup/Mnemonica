@@ -1,0 +1,39 @@
+html, body {
+	background: rgb(192 192 192);
+}
+
+.tag {
+	color: rgb(19, 15, 29);
+	/* background-color: rgb(21, 26, 13);  */
+    padding: 2px;
+    width: 50px;
+    /* font-weight: bold; */
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.brd {
+    border: 2px double black;
+    background: #fc3;
+    padding: 2px;
+    color: rgb(26 217 96);
+    background-color: rgb(43 45 42);
+    width: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 19px;
+   }
+.log-button {
+    box-shadow: 0 5px 15px 0 rgba(11, 99, 246, 1);
+    transition: 0.5s;
+    padding: 10px 17px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    color: #012903;
+    } 
+.log-button:hover {background-color: #4185dd}
+[highlight] {
+    filter: drop-shadow(0 0 10px green);
+}

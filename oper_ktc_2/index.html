@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Cache-Control" content="max-age=0, must-revalidate" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>voda</title>
+	<link rel="stylesheet" href="oper_ktc.css" />
+	<link rel="stylesheet" href="../_/lib/jquery-ui.min.css" />
+	<link rel="shortcut icon" href="resources/favicon.png" type="image/png" />
+  
+  
+  <script>
+		// Массив с URL-адресами GIF-файлов
+		var gifUrls = [
+			"5WWU.gif",
+			 ];
+  
+		// Функция для получения случайного URL-адреса GIF
+		function getRandomGifUrl() {
+			var randomIndex = Math.floor(Math.random() * gifUrls.length);
+			return gifUrls[randomIndex];
+		}
+  
+		// Загрузка случайного GIF при загрузке страницы
+		window.onload = function() {
+			var randomGifUrl = getRandomGifUrl();
+			var imgElement = document.getElementById("randomGif");
+			imgElement.src = randomGifUrl;
+		};
+	</script>
+          
+          
+  <style>
+            
+  img[src="elements/nasosrab.svg"] {
+  animation: 1s linear 0s normal none infinite running rot;
+  -webkit-animation: 1s linear 0s normal none infinite running rot;
+  width: 61px; 
+  }
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .gif-container {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+	}
+	.fade-in-image {
+	  opacity: 0;
+	  animation: fadeIn ease-in 1;
+	  animation-fill-mode: forwards;
+	  animation-duration: 9s;
+	}
+	@keyframes fadeIn {
+	  0% {
+		opacity: 0;
+	  }
+	  100% {
+		opacity: 1;
+	  }
+	}
+	.center {
+	  display: block;
+	  margin: 0 auto;
+	}
+	#myImage {
+			  display: none;
+		  }
+
+  </style>
+</head>
+
+
+
+<body>
+     <img  src="voda3.svg">
+<!-- Хак для отключения перехвата контекстных меню объектом svg -->
+     
+  <div style="position:fixed;top:0;left:0;bottom:0;right:0;">
+		<img id="randomGif" class="fade-in-image" width="100%" height="auto">
+	</div>
+
+     <div
+     scheme="oper_ktc"
+     lib="oper_ktc"
+     type="mnemonica"
+     users="ktc_duty,esmal,crow,void,tai_eng,tai_duty,pto-gen"
+     admins="esmal,crow,tai_eng,void"
+     highlight-timeout="3",
+     log="true"
+   ></div>
+   <div
+     scheme="tags"
+     type="insql"
+     users="ktc_duty,esmal,crow,void,tai_eng"
+     admins="esmal,crow,tai_eng,void"
+   ></div>
+            <!-- <div style="position: absolute; width: 100px; height: 100px; top: 289px; left: 146px;">
+              <img  src="nasos.svg" >
+          </div> -->
+          <div style="position: absolute; width: 100px; height: 100px; top: 195px; left: 644px;">
+            <img  src="kond1.gif">
+          </div> 
+          <div style="position: absolute; width: 100px; height: 100px; top: 195px; left: 1023px;">
+            <img  src="kond2.gif">
+          </div> 
+          <div style="position: absolute; width: 100px; height: 100px; top: 8px; left: 555px;">
+            <img  src="reka.gif">
+          </div> 
+          <!-- <div style="position: absolute; width: 100px; height: 100px; top: 82px; left: 476px;">
+            <img  src="kol.gif">
+          </div>  -->
+          <script src="../_/lib/jquery-1.12.4.min.js"></script>
+          <script src="../_/lib/jquery-ui.min.js"></script>
+          <script src="../_/js/mnemonica-0.8.js?0"></script>
+
+
+          <script>
+            // Получаем ссылку на элемент картинки
+       const imageElement = document.getElementById("randomGif");
+    
+            // Устанавливаем таймер для скрытия картинки через 3 секунды
+      let timeoutId;
+        function hideImage() {
+        imageElement.style.display = "block";
+            }
+        function showImage() {
+        imageElement.style.display = "none";
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(hideImage, 2000); // Скрыть через 3 секунды
+            }
+    
+            // Обработчик события "mousemove" для отслеживания движения мыши
+      document.addEventListener("mousemove", showImage);
+    </script>
+
+<div class="gif-container">
+<img  src="snegovik.gif" width="100%" height="auto">
+</div>
+
+  </body>
+</html>

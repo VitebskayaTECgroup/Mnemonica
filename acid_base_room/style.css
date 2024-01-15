@@ -1,0 +1,36 @@
+body {
+	background: #000000;
+}
+
+.div_black {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: center;
+	width: 30px;
+	background: yellow;
+	font-size: 10pt;
+	color: black;
+	border: 0px inset #c0c2ce;
+}
+
+.div_time {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: center;
+	width: 140px;
+	font-size: 12pt;
+	background: #fee3c3;
+	color: black;
+	border: 3px inset #c0c2ce;
+}
+
+.levelH {
+	-webkit-transform: rotate(-90deg);
+	/* Chrome y Safari */
+	-moz-transform: rotate(-90deg);
+	/* Firefox */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	/* Internet Explorer */
+	-o-transform: rotate(-90deg);
+	/* Opera */
+}

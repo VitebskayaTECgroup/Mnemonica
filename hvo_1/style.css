@@ -1,0 +1,56 @@
+body {
+	background: #000000;
+}
+
+.div_black {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: center;
+	width: 30px;
+	background: yellow;
+	font-size: 10pt;
+	color: black;
+	border: 0px inset #c0c2ce;
+}
+
+
+.div_black2 {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: center;
+	width: 45px;
+	background: yellow;
+	font-size: 15pt;
+	color: black;
+	border: 0px inset #c0c2ce;
+}
+
+.small {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 2px;
+	font-size: 15pt;
+	background: yellow;
+	color: black;
+	border: 0px inset #c0c2ce;
+}
+
+.div_time {
+	font-family: GostARegular;
+	font-weight: bold;
+	text-align: center;
+	width: 140px;
+	font-size: 12pt;
+	background: #fee3c3;
+	color: black;
+	border: 3px inset #c0c2ce;
+}
+
+.levelH {
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}

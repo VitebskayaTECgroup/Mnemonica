@@ -1,0 +1,19 @@
+body {
+	background: #2a292f;
+}
+
+img {
+	position: absolute;
+	width: 1390px;
+	top: 30px;
+	left: 50px;
+}
+
+[scheme] div {
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 24px;
+	text-align: left;
+	color: #05ac59;
+	cursor: default;
+}
